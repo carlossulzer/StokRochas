@@ -1,0 +1,267 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Principal.master.cs" Inherits="Principal" %>
+
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="cc1" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>:: Stok Rochas ::</title>
+    <link href="App_Themes/StokRochas/Estilo.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+        .style1
+        {
+            width: 400px;
+            height: 10px;
+        }
+        .style2
+        {
+            text-align: right;
+            padding-right: 4px;
+            padding-top: 2px;
+            width: 94px;
+            height:18px;
+        }
+        .AquaStyle .ajax__combobox_inputcontainer .ajax__combobox_textboxcontainer input
+        {
+            margin: 0;
+            background-image: url(imagens/aqua-bg.gif);
+            background-position: top left;
+            border: 0px none;
+            padding: 0px 0px 0px 0px;
+            font-size: 11px;
+            height: 17px;
+            width: 260px;
+        }
+        .AquaStyle .ajax__combobox_inputcontainer .ajax__combobox_buttoncontainer button
+        {
+            background-image: url(imagens/aqua-arrow.gif);
+            background-position: top left;
+            border: 0px none;
+            height: 17px;
+            width: 17px;
+        }
+        .AquaStyle .ajax__combobox_itemlist
+        {
+            border-color: #000000;
+            background-color: #FFFFFF;
+        }
+        .style3
+        {
+            text-align: center;
+            padding-right: 4px;
+            height: 8px;
+            width: 94px;
+        }
+        .style4
+        {
+            height: 8px;
+        }
+        
+    </style>
+    <%--
+    <script type="text/javascript" src="js/prototype.js"></script>
+    <script type="text/javascript" src="js/scriptaculous.js?load=effects"></script>
+    <script type="text/javascript" src="js/lightbox.js"></script>
+    <link rel="stylesheet" href="css/lightbox.css" type="text/css" media="screen" />--%>
+    
+</head>
+<body>
+    <form id="form2" runat="server">
+    <asp:ScriptManager ID="ScriptManager1" runat="server" AsyncPostBackTimeout="3600">
+    </asp:ScriptManager>
+    <div id="menu">
+        <ul>
+            <li><a href="Default.aspx">HOME</a></li>
+            <li><a href="frmFornecedores.aspx">FORNECEDORES</a></li>
+            <li><a href="frmServicos.aspx">UTILIDADES</a></li>
+            <li><a href="frmPromocoes.aspx?codFornecedor=0">PROMOÇÕES</a></li>
+            <li><a href="frmLancamentos.aspx?codFornecedor=0">LANÇAMENTOS</a></li>
+            <li><a href="frmSejaUmParceiro.aspx">SEJA UM PARCEIRO</a></li>
+            <li><a href="frmContatos.aspx">CONTATOS</a></li>
+        </ul>            
+        
+    </div>
+
+    <div class="div_topo">
+        <div style="width: 510px; height: 179px; float: left">
+            <div style="padding: 10px; width: 490px; height: 101px; float: left">
+                <asp:ImageButton ID="ImageButton1" runat="server" Height="96px" 
+                    ImageUrl="~/imagens/logo.jpg" Width="474px" onclick="ImageButton1_Click" 
+                    ToolTip="Página Inicial do Site" />
+            </div>
+            <div style="padding: 10px; width: 490px; height: 33px">
+                <asp:Label ID="Label1" runat="server" Font-Size="21px" Text="O seu portal de busca de Mármore e Granito"
+                    Font-Names="Verdana"></asp:Label>
+            </div>
+        </div>
+        <div style="width: 404px; height: 179px; float: left; background-image: url('imagens/Fundo_Chapa.jpg');
+            background-repeat: no-repeat;">
+            <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+                <ContentTemplate>
+                    <table class="style1" border="0" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td class="style2">
+                            </td>
+                            <td>
+                                &nbsp;
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="style2">
+                                <asp:Label ID="Label2" runat="server" Text="Fornecedores" CssClass="styleFonte"></asp:Label>
+                            </td>
+                            <td style="text-align: left">
+                                <cc1:ComboBox ID="cbxFornecedores" runat="server" AutoPostBack="True"
+                                    DropDownStyle="DropDownList" AutoCompleteMode="SuggestAppend" CaseSensitive="False"
+                                    ItemInsertLocation="Append" CssClass="AquaStyle" OnSelectedIndexChanged="cbxFornecedores_SelectedIndexChanged">
+                                </cc1:ComboBox>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="style2">
+                                <asp:Label ID="Label3" runat="server" Text="Cor" CssClass="styleFonte"></asp:Label>
+                            </td>
+                            <td style="text-align: left">
+                                <cc1:ComboBox ID="cbxCor" runat="server" AutoPostBack="True"
+                                    DropDownStyle="DropDownList" AutoCompleteMode="SuggestAppend" CaseSensitive="False"
+                                    ItemInsertLocation="Append" CssClass="AquaStyle" OnSelectedIndexChanged="cbxCor_SelectedIndexChanged">
+                                </cc1:ComboBox>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="style2">
+                                <asp:Label ID="Label4" runat="server" Text="Material" CssClass="styleFonte"></asp:Label>
+                            </td>
+                            <td style="text-align: left">
+                                <cc1:ComboBox ID="cbxMaterial" runat="server" AutoPostBack="True"
+                                    DropDownStyle="DropDownList" AutoCompleteMode="SuggestAppend" CaseSensitive="False"
+                                    ItemInsertLocation="Append" CssClass="AquaStyle" OnSelectedIndexChanged="cbxMaterial_SelectedIndexChanged">
+                                </cc1:ComboBox>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="style2">
+                                <asp:Label ID="Label5" runat="server" Text="Tipo" CssClass="styleFonte"></asp:Label>
+                            </td>
+                            <td style="text-align: left">
+                                <cc1:ComboBox ID="cbxTipoProduto" runat="server" AutoPostBack="True"
+                                    DropDownStyle="DropDownList" AutoCompleteMode="SuggestAppend" CaseSensitive="False"
+                                    ItemInsertLocation="Append" CssClass="AquaStyle" OnSelectedIndexChanged="cbxTipoProduto_SelectedIndexChanged">
+                                </cc1:ComboBox>                                
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="style2">
+                                <asp:Label ID="Label6" runat="server" Text="Espessura" CssClass="styleFonte"></asp:Label>
+                            </td>
+                            <td style="text-align: left">
+                                <cc1:ComboBox ID="cbxEspessura" runat="server" AutoPostBack="True"
+                                    DropDownStyle="DropDownList" AutoCompleteMode="SuggestAppend" CaseSensitive="False"
+                                    ItemInsertLocation="Append" CssClass="AquaStyle" OnSelectedIndexChanged="cbxEspessura_SelectedIndexChanged">
+                                </cc1:ComboBox>                                
+                            </td>
+                        </tr>
+                    </table>
+                    <table class="style1" border="0" cellpadding="0" cellspacing="0">
+                        <tr style="height: 15px">
+                            <td class="style3">
+                            </td>
+                            <td class="style4">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center" colspan="2">
+                                <asp:ImageButton ID="ibtnConsultar" runat="server" ImageUrl="~/imagens/botao_consultar.jpg"
+                                    OnClick="ibtnConsultar_Click" />
+                                    
+<%--                                &nbsp;<asp:ImageButton ID="ibtnLimpar" runat="server" 
+                                    ImageUrl="~/imagens/botao_limpar.jpg" onclick="ibtnLimpar_Click" />--%>
+                                    
+                            </td>
+                        </tr>
+                    </table>
+                </ContentTemplate>
+                <Triggers>
+                    <asp:AsyncPostBackTrigger ControlID="cbxFornecedores" 
+                        EventName="SelectedIndexChanged" />
+                    <asp:AsyncPostBackTrigger ControlID="cbxCor" EventName="SelectedIndexChanged" />
+                    <asp:AsyncPostBackTrigger ControlID="cbxMaterial" 
+                        EventName="SelectedIndexChanged" />
+                    <asp:AsyncPostBackTrigger ControlID="cbxTipoProduto" 
+                        EventName="SelectedIndexChanged" />
+                    <asp:AsyncPostBackTrigger ControlID="cbxEspessura" 
+                        EventName="SelectedIndexChanged" />
+<%--                    <asp:AsyncPostBackTrigger ControlID="ibtnLimpar" EventName="Click" />
+--%>                </Triggers>
+            </asp:UpdatePanel>
+                    
+        </div>
+    </div>
+    
+    
+<%--   
+        <div class="div_esquerda">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            
+            </asp:ContentPlaceHolder>
+        </div>
+--%>   
+    
+    <div class="div_centro">
+        <div class="div_esquerda">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div class="div_direita">
+            <asp:Panel ID="Panel0" runat="server" CssClass="pnlpropaganda" Width="160px">
+                <a id="A4" href="http://www.gramic.com.br" target="_blank">
+                    <asp:Image ID="Image5" runat="server" Height="75px" ImageUrl="~/Logotipos/gramic.jpg"
+                        Width="145px" EnableViewState="False" />
+                </a>
+            </asp:Panel>
+            <asp:Panel ID="Panel1" runat="server" CssClass="pnlpropaganda" Width="160px">
+                <a id="A5" href="http://www.wartecnologia.com" target="_blank">
+                    <asp:Image ID="Image7" runat="server" Height="75px" ImageUrl="~/Logotipos/War.jpg"
+                        Width="145px" EnableViewState="False" />
+                </a>
+            </asp:Panel>
+            
+            
+            <asp:Panel ID="Panel3" runat="server" CssClass="pnlpropaganda" Width="160px">
+            <a id="A1" href="http://www.sferarolamentos.com.br/default.asp?arq=incEmpresa.asp&f=2" target="_blank">
+                <asp:Image ID="Image12" runat="server" Height="75px" ImageUrl="~/Logotipos/SFeraRolamentos.gif"
+                    Width="145px" EnableViewState="False" />
+            </a>
+            </asp:Panel>
+            
+            
+            
+            <asp:Panel ID="Panel4" runat="server" CssClass="pnlpropaganda" Width="160px">
+                <a id="A2" href="http://www.fegomautomacao.com.br" target="_blank">
+                    <asp:Image ID="Image6" runat="server" Height="75px" ImageUrl="~/Logotipos/logoFegom.jpg"
+                        Width="145px" EnableViewState="False" />
+                </a>
+            </asp:Panel>
+            <asp:Panel ID="Panel5" runat="server" CssClass="pnlpropaganda" Width="160px">
+                <a id="A3" href="http://netsulinternet.com.br/" target="_blank">
+                    <asp:Image ID="Image8" runat="server" Height="75px" ImageUrl="~/Logotipos/NetSul.jpg"
+                        Width="145px" EnableViewState="False" />
+                </a>
+            </asp:Panel>
+            <asp:Panel ID="Panel6" runat="server" CssClass="pnlpropaganda" Width="160px">
+                <asp:Image ID="Image1" runat="server" Height="80px" ImageUrl="~/Logotipos/anuncie_aqui.jpg"
+                    Width="155px" EnableViewState="False" />
+            </asp:Panel>
+        </div>
+    </div>
+    
+    
+    
+    <div class="div_rodape">
+        <span>(28) 3518-6666 - stokrochas@stokrochas.com.br | Rua Dr. Amilcar Figluzzi, 130, Coronel Borges, Cachoeiro de Itapemirim, ES | CEP:29.306-220
+        <br/>
+        Melhor visualização em 1024X768 | www.stokrochas.com.br | Todos os direitos reservados
+        </span>
+    </div>
+    </form>
+</body>
+</html>
