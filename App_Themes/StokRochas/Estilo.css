@@ -1,0 +1,1378 @@
+﻿/* ===============================================================================
+   LINK
+   =============================================================================== */
+a
+{
+	color: #E0691A;
+	background: inherit;
+}
+a:hover
+{
+	color: #6C757A;
+	background: inherit;
+}
+/*================================================================================*/
+.labels
+{
+	color:Black;
+}
+
+.labelTitulos
+{
+	font-size: 16px;
+	color: gray;
+	font-weight: bold;
+}
+.labelSubTitulo
+{
+	font-size: 12px;
+	font-weight: bold;
+}
+
+
+.popup
+{
+    background-color:Gray;
+    filter: alpha(opacity=70);
+    Opacity: 0.7;
+}
+
+.titulo
+{
+	font-size: 16px;
+	color: gray;
+	font-weight: bold;
+}
+
+.inicio_flash
+{
+	margin:0;
+	width: 729px; 
+	height: 270px; 
+}
+.flash
+{
+	margin:0;
+	width: 729px; 
+	height: 270px;	
+}
+.animacao
+{
+	margin:0;
+	width : 729px;
+	height : 270px;	
+}
+
+/* ========================================== 
+   WucProdutos.ascx 
+   ========================================== */
+.produtos_forms
+{
+	float: left;
+	width: 730px;
+	height: auto;
+}
+.produtos_topo
+{
+	float: left;
+	margin-top: 5px;
+	width: 671px;
+	height: 35px;
+	text-align: right;
+}
+.produtos_titulo_imagem
+{
+	float:left; 
+	margin-top: 5px; 
+	float: left; 
+	width: 455px; 
+	height: 25px; 
+	text-align: right;
+}
+.produtos_titulo_texto
+{
+	float: left;
+	margin-top: 5px;
+	padding-left: 9px;
+	float: left;
+	width: 180px;
+	height: 25px;
+}
+
+.produtos_datalist
+{
+	float: left;
+	width: 725px;
+	height: auto;
+}
+.produtos_itens_interna
+{
+	float:left; 
+	padding-left: 10px; 
+	width: 174px; 
+	height: 108px;
+	
+}
+
+.produtos_painel
+{ 
+	width :170px;
+	height : 108px;
+	margin-left:10px;
+	text-align: left;
+	background-image: url(../../imagens/quadro_informacoes_estoque.jpg); background-repeat: no-repeat; 
+}
+
+.produtos_filtro_titulo
+{
+	width: auto; 
+	height: 23px; 
+	background-color: #ffcc33; 
+	text-align: center;
+    font-size: 11px;
+	color: black;
+    font-family:Verdana, Tahoma, Arial, Serif;
+}
+.produtos_filtro_texto
+{
+	float:left; 
+	width: 413px; 
+	height: 90px; 
+	text-align: center; 
+	padding-right: 10px;
+    padding-left: 10px; 
+    padding-top: 15px;
+    font-size: 11px;
+	color: black;
+    font-family:Verdana, Tahoma, Arial, Serif;
+}
+.produtos_filtro_botoes
+{
+	float:left;
+	width: 100%;
+	height: 35px; 
+	text-align: center;
+}
+.produtos_mensagem
+{
+	float:left; 
+	width: 668px; 
+	height: 18px;
+    text-align: center;
+    padding-top: 15px;
+}
+/* ========================= navegador =============*/
+.navegador
+{
+	float: left;
+	width: 668px;
+	height: 52px;
+	text-align: center;
+}
+.navegador_interna
+{
+	width: 260px; 
+	height: 51px;
+	text-align: center;
+}
+.navegador_centro
+{
+	float: left;
+}
+.navegador_imagem_o
+{
+	width: 24px; 
+	height: 23px;
+	text-align: center;
+	padding-left:2px;
+}
+.navegador_link
+{
+	width: 24px; 
+	height: 23px;
+	text-align: center;
+}
+.letra_k
+{
+	float: left; 
+	width: 20px; 
+	padding-top: 1px; 
+	height: 23px;
+}
+.letra_st
+{
+	float: left; 
+	width: 27px; 
+	padding-top: 1px; 
+	height: 27px;
+}
+.seta_direita
+{
+	float: left; 
+	width: 33px; 
+	height: 25px; 
+	text-align: right;
+}
+.seta_esquerda
+{
+	float: left; 
+	width: 33px; 
+	height: 25px; 
+	text-align: left;
+}
+
+
+/* ========================================== 
+   WucParceria.asc 
+   ========================================== */
+.parceria_form
+{
+	width: 729px; 
+	height: 630px; 
+	padding-left:5px;
+}
+.parceria_topo
+{
+	margin-top: 5px; 
+	width: 668px; 
+	height: 45px; 
+	text-align:right;
+}
+.parceria_titulo_imagen
+{
+	margin-top: 5px; 
+	float: left; 
+	width: 450px; 
+	height: 25px; 
+	text-align: right;
+}
+.parceria_titulo_texto
+{
+	margin-top: 5px; 
+	padding-left : 15px;
+	float: left; 
+	width: 180px; 
+	height: 25px;
+}
+.parceria_texto
+{
+	width: 450px; 
+	height: 353px; 
+	text-align: justify; 
+	float: right;	
+	padding-right:15px
+}
+.parceria_logo_investimento
+{
+	float: left; 
+	width: 237px; 
+	height: 380px;
+	text-align:center;
+}
+.parceria_telefone
+{
+	float: right; 
+	width: 450px; 
+	height: 24px; 
+	text-align: center;
+}	
+.parceria_separacao
+{
+	width: 100px; 
+	height: 6px;
+}
+.parceria_investimento
+{
+	padding-left: 20px; 
+	float: left; 
+	width: 668px; 
+	height: 70px; 
+	text-align: center;
+}
+.parceria_investimento_topo
+{
+	margin-top: 5px; 
+	float: right; 
+	width: 664px; 
+	height: 45px; 
+	text-align: right;
+}
+.parceria_investimento_imagem
+{
+	margin-top: 5px; 
+	float: left; 
+	width: 288px; 
+	height: 29px;
+}
+.parceria_investimento_titulo
+{
+	float:left;
+	width: 275px; 
+	height: 32px; 
+	text-align: left;
+	padding-left: 5px;
+	padding-top:5px;
+}
+.parceria_investimento_texto
+{
+	float:left;
+	padding-left: 5px; 
+	width: 656px; 
+	height: 90px; 
+	text-align: justify;
+	line-height: 1.5em;
+}
+.parceria_investimento_texto1
+{
+	font-size: 11px; 
+	font-family: Verdana;
+}
+.parceria_investimento_valor1
+{
+	float: left; 
+	width: 654px; 
+	height: 35px;
+}
+.parceria_investimento_valor2
+{
+	padding: 2px 3px 0 0;
+	float: left; 
+	width: 84px; 
+	height: 17px;
+    text-align: right;
+}
+.parceria_investimento_valor3
+{
+	float: left; 
+	width: 461px; 
+	height: 21px;
+}
+.parceria_investimento_fechar
+{
+	float: left; 
+	width: 654px; 
+	height: 32px; 
+	text-align: center;
+}
+
+
+.parceria_sem_sistema
+{
+	width: 695px; 
+	height: 208px; 
+	padding-left: 5px;	
+	line-height: 1.5em;
+}
+
+.parceria_sem_sistema_topo
+{
+	margin-top: 5px; 
+	float: right; 
+	width: 678px; 
+	height: 40px; 
+	text-align: right;
+}
+.parceria_sem_sistema_imagem
+{
+	margin-top: 5px; 
+	float: left; 
+	width: 248px; 
+	height: 29px;
+}
+.parceria_sem_sistema_titulo
+{
+	width: 405px; 
+	height: 32px; 
+	text-align: left;
+	padding-top:5px;
+	float:left;
+	padding-left:5px;
+}
+
+.parceria_sem_sistema_texto
+{
+	padding-left: 5px;
+	padding-top: 5px;
+	width: 670px;
+	height: 84px;
+	text-align: justify;
+	float: left;
+}
+
+.parceria_sem_sistema_valor1
+{
+	float: left;
+	width: 675px;
+	height: 35px;
+}
+
+.parceria_sem_sistema_valor2
+{
+	padding-right: 3px; 
+	float: left; 
+	width: 84px; 
+	padding-top: 2px; 
+	height: 17px;
+    text-align: right;
+}
+
+.parceria_sem_sistema_valor3
+{
+	float: left; 
+	width: 461px; 
+	height: 21px;
+	text-align:left;
+}
+
+.parceria_sem_sistema_fechar
+{
+	float: left;
+	width: 732px;
+	height: 30px;
+	text-align: center;
+}
+
+/*----------------------------------------*/
+
+.parceria_com_sistema
+{
+	width: 707px;
+	height: 196px;
+	padding-left: 8px;
+}
+
+.parceria_com_sistema_topo
+{
+	margin-top: 5px;
+	float: left;
+	width: 704px;
+	height: 40px;
+	text-align: right;
+}
+.parceria_com_sistema_imagem
+{
+	margin-top: 5px; 
+	float: left; 
+	width: 240px; 
+	height: 29px;
+}
+.parceria_com_sistema_titulo
+{
+	width: 453px; 
+	height: 32px; 
+	text-align: left;
+	padding-top:5px;
+	float:left;
+	padding-left:5px;
+}
+
+.parceria_com_sistema_texto
+{
+	padding-top: 5px;
+	width: 702px;
+	height: 82px;
+	text-align: justify;
+	line-height: 1.5em;
+	float: left;
+	padding-left: 10;
+}
+
+.parceria_com_sistema_valor1
+{
+	float: left;
+	width: 704px;
+	height: 35px;
+}
+
+.parceria_com_sistema_valor2
+{
+	padding-right: 3px; 
+	float: left; 
+	width: 84px; 
+	padding-top: 2px; 
+	height: 17px;
+    text-align: right;
+}
+
+.parceria_com_sistema_valor3
+{
+	float: left; 
+	width: 461px; 
+	height: 21px;
+	text-align:left;
+}
+
+.parceria_com_sistema_fechar
+{
+	float: left; 
+	width: 701px; 
+	height: 25px; 
+	text-align: center;
+}
+
+
+/* ========================================== 
+   WucContato.ascx 
+   ========================================== */
+.contato_form
+{
+	width: 729px; 
+	height: 630px; 
+	padding-left:10px;
+	text-align:left;
+}
+
+.contato_right
+{
+	PADDING-LEFT: 10px; 
+	FLOAT: right; 
+	WIDTH: 425px; 
+	HEIGHT: 288px; 
+	TEXT-ALIGN: left;
+}
+
+.contato_topo
+{
+	margin-top: 5px; 
+	width: 728px; 
+	height: 45px; 
+	text-align:right;
+}
+.contato_titulo_imagen
+{
+	margin-top: 5px; 
+	float: left; 
+	width: 555px; 
+	height: 25px; 
+	text-align: right;
+}
+.contato_titulo_texto
+{
+	margin-top: 5px; 
+	padding-left : 15px;
+	float: left; 
+	width: 155px; 
+	height: 25px;
+	text-align:left;
+}
+
+
+/* ========================================== 
+   WucFornecedores.asc 
+   ========================================== */
+.fornecedores_form
+{
+	width: 729px;
+	height: 630px;
+	/*max-height: 400px;*/
+	text-align:left;
+	float:left;
+	padding-left:8px;
+}
+.fornecedores_topo
+{
+	margin-top: 5px; 
+	width: 720px; 
+	height: 45px; 
+	text-align:right;
+}
+.fornecedores_titulo_imagem
+{
+	margin-top: 5px; 
+	float: left; 
+	width: 508px; 
+	height: 25px; 
+	text-align: right;
+}
+.fornecedores_titulo_texto
+{
+	margin-top: 5px; 
+	padding-left : 15px;
+	float: left; 
+	width: 130px; 
+	height: 25px;
+	float:left;
+}
+.fornecedores_barra
+{
+	Height : 3px;
+	Width :668px;
+	background-image: url(../../imagens/barra_fornecedores.jpg);
+	float:left;
+	background-repeat:repeat-x;
+	
+}
+.fornecedores_menu
+{
+	width: 720px;
+	height: 23px;
+	padding-top: 5px;
+	float:left;
+	
+	border-top: gray 2px solid; 
+	border-bottom: gray 2px solid; 
+	text-align: left
+}
+
+.fornecedor_grid
+{
+	width: 720px; 
+	height: 350px;	
+	float:left;
+	margin-top : 3px;
+	text-align: left;
+	vertical-align : top;
+}
+.fornecedor_template
+{
+	width: 667px; 
+	height: 103px; 
+	padding-left: 10px;
+	float:left;
+}
+.fornecedor_logomarca
+{
+	float: left;
+	width: 261px;
+	height: 102px;
+}
+.fornecedor_painel_logo
+{
+	Height:102px;
+	Width:259px;
+	background: url(../../imagens/logomarca_fornecedor.jpg) no-repeat;
+}
+.fornecedor_painel_dados
+{
+	height:102px;
+	width:143px;
+	background: url(../../imagens/quadro_fornecedor.jpg) no-repeat;
+}
+.fornecedor_link
+{
+	float: left; 
+	width: 138px; 
+	height: 88px; 
+	padding-left: 5px; 
+	padding-top: 12px;
+}
+.fornecedor_dados
+{
+	width: 424px; 
+	height: 100px;
+	padding-left:5px;
+	float:left;
+}
+.fornecedor_dados_background
+{
+	float: right; 
+	width: 425px; 
+	height: 101px; 
+	padding-left: 12px; 
+	text-align:left;
+}
+.fornecedor_dados_seta
+{
+	float: left; 
+	width: 17px; 
+	padding-top: 2px; 
+	height: 14px;
+}
+.fornecedor_dados_nome
+{
+	width: 366px; 
+	height: 18px;
+}
+.fornecedor_dados_telefone
+{
+	float: left; 
+	width: 284px; 
+	height: 14px;
+}
+.fornecedor_dados_estoque
+{
+	float: right; 
+	width: 116px; 
+	height: 23px;
+}
+.fornecedor_datalist
+{
+	width: 668px; 
+	height: auto;
+	margin-top:3px;
+}
+
+
+/* ========================================== 
+   Servicos
+   ========================================== */
+.servicos_form
+{
+	clear:both;
+	width: 730px; 
+	min-height:555px;
+	height: 555px; 
+	text-align:left;
+	background-color: Silver;
+}
+/* hack */
+html>body .servicos_form
+{
+   height: auto;
+}
+
+.servicos_topo
+{
+	width: 730px; 
+	height: 35px; 
+	text-align:right;
+	background-color:White;
+	padding-top:5px;
+}
+
+.servicos_body
+{
+	float: left; 
+	width: 730px; 
+	min-height:555px;
+	height: auto;
+	text-align: center;	
+	background-color: Silver;
+}
+
+.servicos_menu
+{
+	float: left;
+	width: 209px;
+	height: 100%;
+	text-align: right;
+}
+
+.servicos_menu_interno
+{
+	float: left;
+	width: 185px;
+	height: 100%;
+	text-align: right;
+	padding-right: 10px;
+}
+
+.servicos_right
+{
+	padding-left: 3px; 
+	float: left; 
+	width: 518px; 
+	min-height:585px;
+	height: 585px; 
+	text-align: left;
+	vertical-align:top;
+	background-color: White;
+}
+
+/* hack */
+html>body .servicos_right
+{
+   height: auto;
+}
+
+.servicos_select
+{
+	padding: 5px 0 7px 0;
+	float: left;
+	width: 515px;
+	height: 20px;
+	text-align: left;
+	border-top-style: dotted;
+	border-top-width: 1px;
+	border-top-color: #000000;
+	background-color: White;
+}
+
+.servicos_itens
+{
+	float: left;
+	width: 515px;
+	text-align: left;
+	height: auto;
+	background-color: White;
+}
+
+.servicos_titulo_imagen
+{
+	margin-top: 5px; 
+	float: left; 
+	width: 555px; 
+	height: 25px; 
+	text-align: right;
+}
+
+.servicos_titulo_texto
+{
+	margin-top: 5px; 
+	padding-left : 15px;
+	float: left; 
+	width: 155px; 
+	height: 25px;
+	text-align:left;
+}
+
+
+/* ========================================== 
+   Menu Categorias
+   ========================================== */
+
+#servicos_categoria
+{
+	width: 194px;
+	padding: 5px 0 0 3px;
+}
+
+#servicos_categoria ul
+{
+	list-style-type:circle;
+    height: 25px;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    float: left;
+}
+
+#servicos_categoria ul li
+{
+    display: list-item;
+    list-style-type : circle;
+}
+
+
+#servicos_categoria ul li a
+{
+    font-size: 11px;
+    color: #000;
+    background:  #C0C0C0;
+    text-decoration: none;
+    /*padding: 2px 10px;
+    margin-left: 1px;
+    text-transform: capitalize;*/
+}
+
+#servicos_categoria ul li a:hover
+{
+    color: Orange
+    
+}
+
+.fornecedor_painel_srvLogo
+{
+	Height:102px;
+	Width:259px;
+	background: url(../../imagens/logomarca_fornecedor.jpg) no-repeat;
+}
+.fornecedor_painel_dados
+{
+	height:102px;
+	width:143px;
+	background: url(../../imagens/quadro_fornecedor.jpg) no-repeat;
+}
+.fornecedor_link
+{
+	float: left; 
+	width: 138px; 
+	height: 88px; 
+	padding-left: 5px; 
+	padding-top: 12px;
+}
+
+
+/* ========================================== 
+   Promocoes
+   ========================================== */
+.promocoes_form
+{
+	clear:both;
+	width: 730px; 
+	min-height:555px;
+	height: 555px;
+	text-align:left;
+	background-color:Silver;
+}
+
+/* hack */
+html>body .promocoes_form
+{
+   height: auto;
+}
+
+.promocoes_menu
+{
+	float: left;
+	width: 209px;
+	height: 100%;
+	text-align: right;
+}
+
+.promocoes_menu_interno
+{
+	float: left;
+	width: 185px;
+	height: 100%; 
+	text-align: right;
+	padding-right: 10px;
+}
+
+.promocoes_right
+{
+	padding-left: 3px; 
+	float: left; 
+	width: 518px; 
+	min-height:585px;
+	height: 585px;
+	text-align: left;
+	vertical-align:top;
+	background-color:White;
+}
+
+/* hack */
+html>body .promocoes_right
+{
+   height: auto;
+}
+
+.promocoes_topo
+{
+	width: 730px; 
+	height: 35px; 
+	text-align:right;
+	background-color:White;
+	padding-top:5px;
+
+}
+
+.promocoes_select
+{
+	padding: 5px 0 7px 0;
+	float: left;
+	width: 515px;
+	height: 20px;
+	text-align: left;
+	border-top-style: dotted;
+	border-top-width: 1px;
+	border-top-color: #000000;
+	background-color: White;
+}
+
+.promocoes_itens
+{
+	float: left;
+	width: 515px;
+	text-align: left;
+	height: auto;
+	background-color: White;
+}
+.promocoes_titulo_imagen
+{
+	margin-top: 5px; 
+	float: left; 
+	width: 555px; 
+	height: 25px; 
+	text-align: right;
+}
+.promocoes_titulo_texto
+{
+	margin-top: 5px; 
+	padding-left : 15px;
+	float: left; 
+	width: 155px; 
+	height: 25px;
+	text-align:left;
+}
+
+.promocoes_body
+{
+	float: left; 
+	width: 730px; 
+	min-height: 555px;
+	height: auto;
+	text-align: center;	
+	background-color: Silver;
+}
+
+
+
+/* ========================================== 
+   Menu Categorias
+   ========================================== */
+
+#promocoes_categoria
+{
+	width: 194px;
+	padding: 5px 0 0 3px;
+}
+
+#promocoes_categoria ul
+{
+	list-style-type:circle;
+    height: 25px;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    float: left;
+}
+
+#promocoes_categoria ul li
+{
+    display: list-item;
+    list-style-type : circle;
+}
+
+
+#promocoes_categoria ul li a
+{
+    font-size: 11px;
+    color: #000;
+    background:  #C0C0C0;
+    text-decoration: none;
+}
+
+#promocoes_categoria ul li a:hover
+{
+    color: Orange
+    
+}
+
+
+.textoSite, .sombraSite {
+font-family: Verdana;
+font-size: 35px;
+font-weight: bold;
+}
+
+.textoSite
+{
+	color: #FF9900;
+	position: absolute;
+	left: 310px;
+	top: 580px;
+}
+
+.sombraSite
+{
+	color: #808080;
+	position: absolute;
+	left: 312px;
+	top: 582px;
+}
+
+
+
+.textoTelefone, .sombraTelefone{
+font-family: Verdana;
+font-size: 20px;
+font-weight: bold;
+}
+
+.textoTelefone
+{
+	color: #FF9900;
+	position: absolute;
+	left: 450px;
+	top: 620px;
+}
+
+.sombraTelefone
+{
+	color: #808080;
+	position: absolute;
+	left: 452px;
+	top: 622px;
+}
+
+/* ========================================== 
+   Lançamentos
+   ========================================== */
+.lancamentos_form
+{
+	width: 730px; 
+	min-height:555px;
+	height: 555px; 
+	text-align:left;
+	background-color:Silver;
+}
+
+/* hack */
+html>body .lancamentos_form
+{
+   height: auto;
+}
+
+.lancamentos_menu
+{
+	float: left;
+	width: 209px;
+	height: 100%; 
+	text-align: right;
+}
+
+.lancamentos_menu_interno
+{
+	float: left;
+	width: 185px;
+	height:100%;
+	text-align: right;
+	padding-right: 10px;
+}
+
+.lancamentos_right
+{
+	padding-left: 3px; 
+	float: left; 
+	width: 518px; 
+	min-height:585px;
+	height: 585px; 
+	text-align: left;
+	vertical-align:top;
+	background-color: White;
+}
+
+/* hack */
+html>body .lancamentos_right
+{
+   height: auto;
+}
+
+.lancamentos_topo
+{
+	width: 730px; 
+	height: 35px; 
+	text-align:right;
+	background-color:White;
+	padding-top:5px;
+}
+
+.lancamentos_select
+{
+	padding: 5px 0 7px 0;
+	float: left;
+	width: 515px;
+	height: 20px;
+	text-align: left;
+	border-top-style: dotted;
+	border-top-width: 1px;
+	border-top-color: #000000;
+	background-color: White;
+}
+
+.lancamentos_itens
+{
+	float: left;
+	width: 515px;
+	text-align:left;
+	height: auto;
+	background-color: White;
+}
+
+.lancamentos_titulo_imagen
+{
+	margin-top: 5px; 
+	float: left; 
+	width: 555px; 
+	height: 25px; 
+	text-align: right;
+}
+
+.lancamentos_titulo_texto
+{
+	margin-top: 5px; 
+	padding-left : 15px;
+	float: left; 
+	width: 155px; 
+	height: 25px;
+	text-align:left;
+}
+
+.lancamentos_body
+{
+	float: left; 
+	width: 730px; 
+	min-height: 555px;
+	height: auto;
+	text-align: center;	
+	background-color: Silver;
+}
+
+/* ========================================== 
+   Menu Lancamentos
+   ========================================== */
+
+#lancamentos_categoria
+{
+	width: 194px;
+	padding: 5px 0 0 3px;
+}
+
+#lancamentos_categoria ul
+{
+	list-style-type:circle;
+    height: 25px;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    float: left;
+}
+
+#lancamentos_categoria ul li
+{
+    display: list-item;
+    list-style-type : circle;
+}
+
+
+#lancamentos_categoria ul li a
+{
+    font-size: 11px;
+    color: #000;
+    background:  #C0C0C0;
+    text-decoration: none;
+}
+
+#lancamentos_categoria ul li a:hover
+{
+    color: Orange
+    
+}
+
+
+
+
+/* TELA PRINCIPAL
+   ========================================== 
+   Menu 
+   ========================================== */
+        #menu
+        {
+            background: Orange;
+            display: table;
+            width: 100%;
+            height: 20px;
+            padding-top: 2px;
+            text-align: center;	
+        }
+        #menu ul
+        {
+            list-style: none;
+            height: 20px;
+            width: 100%;
+            padding: 0px;
+            margin: 0px;
+            float: left;
+        }
+        #menu ul li
+        {
+            display: inline;
+        }
+        #menu ul li a
+        {
+            font-size: 13px;
+            color: #000;
+            background: Orange;
+            text-decoration: none;
+            padding: 2px 10px;
+            margin-left: 1px;
+            text-transform: capitalize;
+        }
+        #menu ul li a:hover
+        {
+            color: #FFFFFF;
+            background-color: Orange;
+        }
+        body
+        {
+            padding: 0;
+            margin: 0px 0px 0px 0px;
+            color: black;
+            font-family: Verdana, Tahoma, Arial, Serif;
+            font-size: 11px;
+            text-align: center;
+            background-color: #FFFFFF;
+        }
+        .styleFonte
+        {
+            font-size: 11px;
+        }
+        
+        .div_topo
+        {
+            width: 920px;
+            min-height:175px;
+            height: 175px;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .div_centro
+        {
+            padding-top: 10px;
+            width: 920px;
+            min-height:640px;
+            height: 100%;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            background-color:White;
+        }
+      
+               
+        .div_esquerda
+        {
+            float: left;
+            width: 730px;
+            min-height:630px;
+            height: auto;
+            border: gray 1px solid;
+            margin-top: 1px;
+        }
+        .div_direita
+        {
+            margin-left: 3px;
+            float: left;
+            width: 170px;
+            min-height:630px;
+            height: 100%;/*auto;*/
+            text-align: left;
+        }
+        
+        .div_rodape
+		{
+			float:left;
+			margin-top: 10px;
+			border-top: gray 3px solid;
+			border-bottom: gray 3px solid;
+			padding-top: 3px;
+			width: 100%;
+			height: 35px;
+			text-align: center;
+		}
+		
+        .pnlpropaganda
+        {
+            height: 100px;
+            width: 174px;
+            text-align: left;
+            padding: 3px 3px 0px 8px;
+            vertical-align: middle;
+            background-image: url(../../imagens/Propaganda.jpg);
+            background-repeat: no-repeat;
+            margin-bottom: 3px;
+        }
+        
+.divADM
+{
+	background: #FFFFFF;
+	display: table;
+	width: 1098px;
+	height: 446px;
+	padding-top: 2px;
+	text-align: center;
+	margin-left: auto;
+    margin-right: auto;
+}

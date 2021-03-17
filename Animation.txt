@@ -1,0 +1,78 @@
+ <div id="boxwire" style="display: none; width: 250px; height: 200px; position: absolute;
+                left: 50px; top: 0px; overflow: hidden; z-index: 2; background-color: #FFFFFF;
+                border: solid 4px #666666;">
+            </div>
+            <div id="boxinfo" style="display: none; width: 320px; height: 250px; position: absolute;
+                left: 200px; top: 50px; z-index: 2; font-size: 12px; border: solid 3px #666666;
+                background-color: #FFFFFF; padding: 10px;">
+                <asp:ImageButton ID="ImageGrande" runat="server" Height="190px" Width="300px" ImageUrl='<%# String.Format("~/Promocoes/{0}/grande/{1}.jpg", Eval("codCliente") , Eval("codMaterial")) %>'
+ImageAlign="Middle" BorderStyle="Outset" BorderWidth="3px" />
+
+                <p>
+                    <asp:LinkButton ID="btnFecharAnimation" runat="server" OnClientClick="return false">Close</asp:LinkButton>
+                </p>
+            </div>
+            <!-- Animation Open-->
+            <ajaxToolkit:AnimationExtender ID="AnimationExtender1" runat="server" TargetControlID="ImagePeq">
+                <Animations>
+                    <OnMouseOver>
+                        <Sequence>
+                            <EnableAction Enabled="false" />
+                            <StyleAction AnimationTarget="boxwire" Attribute="display" Value="block"/>
+                            <Parallel AnimationTarget="boxwire" Duration=".3" Fps="25">
+                                <Move Horizontal="150" Vertical="50" />
+                                <Resize Width="250" Height="200" />
+                                <Color PropertyKey="backgroundColor" StartValue="#666666" EndValue="#FFFFFF" />
+                            </Parallel>
+
+                            <StyleAction AnimationTarget="boxinfo" Attribute="display" Value="block"/>
+                            <FadeIn AnimationTarget="boxinfo" Duration=".2"/>
+                            <StyleAction AnimationTarget="boxwire" Attribute="display" Value="none"/>
+
+                            <Parallel AnimationTarget="boxinfo" Duration=".5">
+                                <Color PropertyKey="color" StartValue="#666666" EndValue="#00FF00" />
+                                <Color PropertyKey="borderColor" StartValue="#666666" EndValue="#00FF00" />
+
+                            </Parallel>
+
+
+                            <Parallel AnimationTarget="boxinfo" Duration=".5">
+                                <Color PropertyKey="color" StartValue="#00FF00" EndValue="#666666" />
+                                <Color PropertyKey="borderColor" StartValue="#00FF00" EndValue="#666666" />
+                            </Parallel>
+                       </Sequence>
+                    </OnMouseOver>
+                </Animations>
+            </ajaxToolkit:AnimationExtender>
+            
+            <!-- Animation Close-->
+            <ajaxToolkit:AnimationExtender ID="AnimationExtender2" runat="server" TargetControlID="btnFecharAnimation">
+                <Animations>
+                    <OnClick>
+                        <Sequence>
+                            <StyleAction AnimationTarget="boxinfo" Attribute="overflow" Value="hidden"/>
+                            <Parallel AnimationTarget="boxinfo" Duration=".3" Fps="15">
+                                <Scale ScaleFactor="0.05" Center="true" ScaleFont="true" FontUnit="px" />
+                                <FadeOut />
+                            </Parallel>
+                            <StyleAction AnimationTarget="boxinfo" Attribute="display" Value="none"/>
+                            <StyleAction AnimationTarget="boxinfo" Attribute="width" Value="250px"/>
+                            <StyleAction AnimationTarget="boxinfo" Attribute="height" Value="200"/>
+                            <StyleAction AnimationTarget="boxinfo" Attribute="left" Value="200px"/>
+                            <StyleAction AnimationTarget="boxinfo" Attribute="top" Value="50px"/>
+                            <StyleAction AnimationTarget="boxinfo" Attribute="fontSize" Value="12px"/>
+                            <StyleAction AnimationTarget="boxwire" Attribute="width" Value="250px"/>
+                            <StyleAction AnimationTarget="boxwire" Attribute="height" Value="200"/>
+                            <StyleAction AnimationTarget="boxwire" Attribute="left" Value="50px"/>
+                            <StyleAction AnimationTarget="boxwire" Attribute="top" Value="0px"/>
+                            <EnableAction AnimationTarget="hiddenTargetControlForModalPopup" Enabled="true" />
+                        </Sequence>
+                    </OnClick>
+                </Animations>
+            </ajaxToolkit:AnimationExtender>
+    
+
+                     <a id="linkFoto" href='<%# String.Format("Promocoes/{0}/grande/{1}.jpg", Eval("codCliente") , Eval("codMaterial")) %>' rel="lightbox" title='<%# Eval("nomeProduto") %>'> 
+                        <asp:Image ID="ImagePeq" runat="server" Height="100px" Width="135px" ImageUrl='<%# String.Format("~/Promocoes/{0}/pequena/{1}.jpg", Eval("codCliente") , Eval("codMaterial")) %>' 
+                            ImageAlign="Middle" BorderColor="Silver" BorderStyle="Outset" BorderWidth="3px" />
+                     </a>

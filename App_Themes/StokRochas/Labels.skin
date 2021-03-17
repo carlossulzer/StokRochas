@@ -1,0 +1,5 @@
+<asp:Label runat="server" SkinID="labelTitulo"  CssClass="labelTitulos"> </asp:Label>
+
+<asp:Label runat="server" SkinID="labelSubTitulo"  CssClass="labelSubTitulo"> </asp:Label>
+
+<asp:Label runat="server" SkinID="titulo"  CssClass="titulo"> </asp:Label>
