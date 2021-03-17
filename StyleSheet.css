@@ -1,0 +1,113 @@
+﻿/* ========================================== 
+   Promocoes
+   ========================================== */
+.promocoes_form
+{
+	clear:both;
+	width: 730px; 
+	min-height:555px;
+	height: 555px;
+	text-align:left;
+	background-color:Silver;
+}
+
+/* hack */
+html>body .promocoes_form
+{
+   height: auto;
+}
+
+.promocoes_menu
+{
+	float: left;
+	width: 209px;
+	height: 100%;
+	text-align: right;
+}
+
+.promocoes_menu_interno
+{
+	float: left;
+	width: 185px;
+	height: 100%; 
+	text-align: right;
+	padding-right: 10px;
+}
+
+.promocoes_right
+{
+	padding-left: 3px; 
+	float: left; 
+	width: 518px; 
+	min-height:585px;
+	height: 585px;
+	text-align: left;
+	vertical-align:top;
+	background-color:White;
+}
+
+/* hack */
+html>body .promocoes_right
+{
+   height: auto;
+}
+
+.promocoes_topo
+{
+	width: 730px; 
+	height: 35px; 
+	text-align:right;
+	background-color:White;
+	padding-top:5px;
+
+}
+
+.promocoes_select
+{
+	padding: 5px 0 7px 0;
+	float: left;
+	width: 515px;
+	height: 20px;
+	text-align: left;
+	border-top-style: dotted;
+	border-top-width: 1px;
+	border-top-color: #000000;
+	background-color: White;
+}
+
+.promocoes_itens
+{
+	float: left;
+	width: 515px;
+	text-align: left;
+	height: auto;
+	background-color: White;
+}
+.promocoes_titulo_imagen
+{
+	margin-top: 5px; 
+	float: left; 
+	width: 555px; 
+	height: 25px; 
+	text-align: right;
+}
+.promocoes_titulo_texto
+{
+	margin-top: 5px; 
+	padding-left : 15px;
+	float: left; 
+	width: 155px; 
+	height: 25px;
+	text-align:left;
+}
+
+.promocoes_body
+{
+	float: left; 
+	width: 730px; 
+	min-height: 555px;
+	height: auto;
+	text-align: center;	
+	background-color: Silver;
+}
+
